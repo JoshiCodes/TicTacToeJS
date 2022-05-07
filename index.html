@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <script src="tictactoe.js"></script>
+    </head>
+    <body onload="init()">
+        <div class="container">
+            <div class="board">
+                <div class="game-row">
+                    <button id="0" class="square" onclick="handleClick(this)">
+                    </button>
+                    <button id="1" class="square" onclick="handleClick(this);">
+                    </button>
+                    <button id="2" class="square" onclick="handleClick(this);">
+                    </button>
+                </div>
+                <div class="game-row">
+                    <button id="3" class="square" onclick="handleClick(this);">
+                    </button>
+                    <button id="4" class="square" onclick="handleClick(this);">
+                    </button>
+                    <button id="5" class="square" onclick="handleClick(this);">
+                    </button>
+                </div>
+                <div class="game-row">
+                    <button id="6" class="square" onclick="handleClick(this);">
+                    </button>
+                    <button id="7" class="square" onclick="handleClick(this);">
+                    </button>
+                    <button id="8" class="square" onclick="handleClick(this);">
+                    </button>
+                </div>
+            </div>
+            <div class="info">
+                <h2 id="msg">Das Spiel ist aktuell am laufen.</h2>
+                <h2 id="current"></h2>
+            </div>
+        </div>
+        <div class="box">
+            <button onclick="init()">
+                Spiel neu starten
+            </button>
+        </div>
+    </body>
+</html>
